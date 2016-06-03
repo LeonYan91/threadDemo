@@ -17,8 +17,8 @@ import java.util.List;
 @Mapper
 public interface PersonMapper {
 
-    @Select("select * from Person where id = #{id}")
-    public Person selectPerson(@Param("id") Long id);
+//    @Select("select * from Person where id = #{id}")
+//    public Person selectPerson(@Param("id") Long id);
 
     public List<Person> selectAll();
 

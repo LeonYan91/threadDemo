@@ -1,6 +1,6 @@
+package com.yanliang;
 
 import com.yanliang.repository.PersonMapper;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -39,7 +39,8 @@ public class Application {
 
     @RequestMapping("/")
     public String home(){
-        System.out.println(personMapper.selectPerson(1L));
+//        System.out.println(personMapper.selectPerson(1L));
+        System.out.println(personMapper.selectAll());
         return "home";
     }
 
